@@ -18,7 +18,7 @@
 * Office: BE 3175 C. Call/text to verify my current location. [(206) 930-2645](tel:+12069302645)
 * Office Hours:  MW 7:00pm - 8:00pm
 * E-Mail: [joshua.wedekind@seattlecolleges.edu](mailto:joshua.wedekind@seattlecolleges.edu)
-* Website: [https://github.com/SeattleCentral/WEB130](https://github.com/SeattleCentral/WEB130)
+* Website: [https://github.com/SeattleCentral/WEB150](https://github.com/SeattleCentral/WEB150)
 * Github: [halfnibble](https://github.com/halfnibble)
 
 ## Course Description
