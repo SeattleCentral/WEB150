@@ -1,60 +1,57 @@
 ![](SeattleCentralLogo.png)
 # Syllabus
 
-#### WEB 130: WEB AUTHORING III
-#### Item No: 3235
-#### Section: HY
+#### WEB 150: INTRO TO JAVASCRIPT
+#### Item No: 3236
+#### Section: 01
 #### Seattle Central College
 
 ## Course Information
 
 * Credits: 5.0 
-* Quarter: Spring 2018
+* Quarter: Summer 2018
 * Location: BE 3173
 * Days: MW
-* Time: 5:00pm - 6:50pm
-* Dates: 04/02/2018 - 06/12/2018
+* Time: 4:00pm - 6:50pm
+* Dates: 06/25/2018 - 08/17/2018
 * Instructor: Joshua Wedekind
 * Office: BE 3175 C. Call/text to verify my current location. [(206) 930-2645](tel:+12069302645)
-* Office Hours:  MW 4:00pm - 5:00pm
+* Office Hours:  MW 7:00pm - 8:00pm
 * E-Mail: [joshua.wedekind@seattlecolleges.edu](mailto:joshua.wedekind@seattlecolleges.edu)
 * Website: [https://github.com/SeattleCentral/WEB130](https://github.com/SeattleCentral/WEB130)
 * Github: [halfnibble](https://github.com/halfnibble)
 
 ## Course Description
 
-Building on existing knowledge of HTML, CSS, and JavaScript/jQuery; students will design and develop a standards-compliant, responsive website. HTML5, CSS3, and more advanced JavaScript (client and server side) scripting will be utilized. Students are encouraged to investigate and include emerging technologies and approaches into their web project. Students will create a final project to place in their portfolio.
+Examines computer programming theory and basics with the use of the JavaScript programming language. Uses a hands-on approach to building interactive websites with JavaScript and demonstrates how to simplify the web development process with the use of jQuery. Studies several popular web techniques. Prereq: WEB 110 with a grade of 2.0 or higher or permission.
 
-**Prerequisites:** WEB 120 and WEB 150 w/ 2.0 or higher.
+**Prerequisites:** WEB 110 with a grade of 2.0 or higher or permission.
  
 ## Course Goals
 
 Upon Completion of this course, students will be able to:
 			
-1. Expand on existing knowledge of HTML and CSS.
-2. Create professional looking, web standards compliant, responsive websites using HTML5, CSS/CSS3, and JavaScript/jQuery.
-3. Use advanced features of HTML5 and JavaScript/jQuery.
-3. Expand on existing knowledge of HTML forms to create professional looking forms with client and server side validation.
-5. Use CSS and JavaScript frameworks to enhance web pages.
-6. Optimize websites for mobile devices using responsive design principles.
-7. Understand the basics of Bootstrap and other CSS frameworks.
-8. Enhance websites for SEO.
+1. Understand the basics of programming with JavaScript.
+2. Learn how to utilize JavaScript libraries, such as jQuery, to simplify the development process.
+3. Be comfortable manipulating the DOM with JavaScript and jQuery.
+4. Write maintainable, modular code in ES6 syntax.
+5. Use the Node.js runtime to develop and deploy JavaScript solutions.
 
 
 ## Textbook (required):
 
-Mastering Responsive Web Design: Push your HTML and CSS skills to the limit and build professional grade, responsive websites.
+Eloquent JavaScript, 2nd Ed.: A Modern Introduction to Programming
 
-<cite>by Ricardo Zea</cite>
+<cite>by Marijn Haverbeke</cite>
 
 Available at the College Bookstore.<br>
-**ISBN-10:** 1783550236<br>
-**ISBN-13:** 978-1783550234<br>
-And also on [amazon.com](https://www.amazon.com/Mastering-Responsive-Web-Design-Ricardo/dp/1783550236/ref=sr_1_1?ie=UTF8&qid=1491179215&sr=8-1&keywords=mastering+responsive+design)
+**ISBN-10:** 1593275846<br>
+**ISBN-13:** 978-1593275846<br>
+And also on [amazon.com](https://www.amazon.com/Eloquent-JavaScript-2nd-Ed-Introduction/dp/1593275846/ref=sr_1_1?ie=UTF8&qid=1529953016&sr=8-1&keywords=eloquent+javascript)
 
 ## Assignments/Projects
 
-Regular assignments building up to the final project will be posted in Canvas. All assignments are designed to give the student practice with new skills, concepts, and tools covered in class.
+Regular assignments will be posted in Canvas. All assignments are designed to give the student practice with new skills, concepts, and tools covered in class.
 
 Your homework must be turned in on time. Late submissions may be granted partial credit when accompanied by an ingenuitive excuse. Generally speaking, students will learn more if coursework is up-to-date with the lecture. Unfortunately, assignments turned in after course end will receive 0 points. 
 
@@ -62,45 +59,15 @@ To receive full credit, your completed assignment should perform the required fu
 
 Students will have 1 additional week to correct code rejected for not meeting style guidelines. 
 
-Assignments leading up to the final project will constitute half of the final grade. The final project itself will constitute the remaining half.
+Assignments are worth 20 points each.
 
 ## Quizzes/Exams
 
-There will occasionally be quizzes designed to test knowledge retention and evaluate class progression. These will be administered through Canvas and will constitute no more than 10% of the final grade.
-
-As this course is project-based, there will be no exams.
-
-## Evaluation (subject to change)
-
-Evaluation will be based on Assignments, Quizzes, and the Final Project.
-
-<table>
-	<thead>
-		<tr>
-			<th>Task</th>
-			<th>Grade %</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Assignments</td>
-			<td rowspan="2">50%</td>
-		</tr>
-		<tr>
-			<td>Quizzes</td>
-		</tr>
-		<tr>
-			<td>Final Project</td>
-			<td>50%</td>
-		</tr>
-	</tbody>
-</table>
+There will be multiple Quizzes, a Midterm, and a Final Exam. Quizzes will normally be administered in class and may be “group efforts.” Missing a Quiz due to absence will be addressed on a case-by-case basis. In most cases, makeups will be allowed unless absences become problematic. The Midterm and Final Exam will include multiple choice questions, short answer, writing short code snippets, and identifying errors in printed code. Quizzes are worth 20 points each. The Midterm and Final Exam are worth 100 points each.
 
 ## Materials
 
 USB Drive or Cloud Storage and/or Personal Laptop.
-
-A private Web Server may be helpful, but is not required.
 
 ## Attendance 
 
@@ -121,69 +88,52 @@ Students with documented disabilities requesting class accommodations, requiring
 
 **Week 1**
 
-* Introduction and review of HTML & CSS
+* Introduction and review of HTML
+* Talk about the DOM
 * Setting up the development environment
-* Intro to Sass/SCSS
-* Chapter 1 of MRWD
+* Introduction to JavaScript
+* Values, Types, and Operators.
+* Chapter 1 of EJ
 
 **Week 2**
 
-* More on Sass/SCSS
-* Working with HTML5 tags
-* Chapter 2 of MRWD
+* Program Structure and Functions
+* Chapter 2 and 3 of EJ
 
 **Week 3**
 
-* Responsive design concepts
-* Chapter 3 of MRWD
+* Data Structions, Higher-Order Functions, and Objects
+* Chapter 4, 5, and 6 of EJ
 
 **Week 4**
 
-* Grid Systems
-* Chapter 4 of MRWD
+* Error Handling and RegEx
+* Chapter 8 and 9 of EJ
 
 **Week 5**
 
-* More on Grid Systems
-* Intro to CSS Frameworks (Bootstrap)
+* Modules, JavaScript Environments and the Browser
+* Chapters 10 and 12 of EJ 
 
 **Week 6**
 
-* Mobile UI considerations
-* Working with Bootstrap
-* Chatper 5 of MRWD
+* The DOM and Event Handling
+* Chapters 13 and 14 of EJ
 
 **Week 7**
 
-* Typography considerations
-* Chapter 7 of MRWD
+* Forms and HTTP
+* Chapters 17 and 18 of EJ
 
 **Week 8**
 
-* Introduction to GraphQL and AWS AppSync
-* Review of HTML forms
-* HTML5 form elements
-* Using jQuery with forms and AWS AppSync
+* Node.js and the server.
+* Chapter 20 of EJ
 
-**Week 9**
 
-* Putting it together: AWS AppSync, forms, jQuery, and Bootstrap
-* Designing a web application
-
-**Week 10**
-
-* More on Bootstrap
-* Other CSS frameworks
-* Intro to JavaScript frameworks
-
-**Week 11**
-
-* SEO considerations
-* Responsive emails
-* Chapter 8 of MRWD
 
 **\*No class on**<br>
-May 28th, 2018 - Memorial Day<br>
+July 4th, 2018 - Independence Day<br>
 
 See College Holidays
 
