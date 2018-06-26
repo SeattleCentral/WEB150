@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <form method="get" action="#">
+        <p>
+            <label>
+                Enter amount to donate:
+            </label>
+            <input id="donated_amount" type="number" step="0.01">
+        </p>
+        <p>
+            <button type="button" id="donate_button">
+                Donate now!
+            </button>
+        </p>
+        <h1>
+            Amount Raised: $<span id="total_donated">0.00</span>
+        </h1>
+        
+    </form>
+    
+    <script type="text/javascript">
+        var donated_amount_input = document.getElementById('donated_amount');
+        var donate_button = document.getElementById('donate_button');
+        var total_donated = document.getElementById('total_donated');
+        var total = 0.00;
+        
+        donate_button.addEventListener('click', function(event) {
+            var donated_amount = donated_amount_input.value;
+            total = total + parseFloat(donated_amount);
+            total_donated.innerHTML = total;
+            donated_amount_input.value = '';
+        }, false);
+    </script>
+        
+</body>    
+</html>

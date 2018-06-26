@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    <form method="get" action="#">
+        <p>
+            When a is: <input id="a" type="text" value="3">
+        </p>
+        <p>
+            And b is: <input id="b" type="text" value="5">
+        </p>
+        <p>
+            Then the hypotenuse is <strong id="c">_?_</strong>
+        </p>
+        <p>
+            <button type="button" id="calculate">
+                Calculate Hypotenuse
+            </button>
+        </p>
+    </form>
+    
+    <script type="text/javascript">
+        var a_input = document.getElementById('a');
+        var b_input = document.getElementById('b');
+        var c_output = document.getElementById('c');
+        var submit_button = document.getElementById('calculate');
+        
+        /*
+            When the calculate hypotenuse button is clicked,
+            calculate the value for "c" and display it.
+        */
+        submit_button.addEventListener('click', function(event) {
+            // debugger;
+            var a = a_input.value;
+            var b = b_input.value;
+            c_output.innerHTML = Math.sqrt(a * a + b * b);
+        }, false);
+    </script>
+</body>    
+</html>
