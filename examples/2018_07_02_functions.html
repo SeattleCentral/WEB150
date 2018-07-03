@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Output Examples</title>
+</head>
+<body>
+    <h1>
+        Employee logins
+    </h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Last Login
+                </th>
+            </tr>
+        </thead>
+        <tbody id="login-table">
+            
+        </tbody>
+    </table>
+    
+    
+
+    <script type="text/javascript">
+        var person = 'Bob';
+        // Parameter - Variable passed in during function call
+        // Argument - ^^^
+        var greeter = function(person) {
+            return 'Hello, ' + person;
+        }; 
+        // alert(greeter('Joshua'));
+        // alert('Hello, ' + person);
+        
+        var serverData = [
+            {
+                'name': 'Sally Smith',
+                'email': 's.smith@fiboco.com',
+                'last_login': '2018-03-06T07:12:25-07:00'
+            },
+            {
+                'name': 'Samantha Sue',
+                'email': 's.sue@fiboco.com',
+                'last_login': '2018-05-12T09:15:36-07:00'
+            },
+            {
+                'name': 'Bob Martini',
+                'email': 'b.martini@fiboco.com',
+                'last_login': '2018-05-06T12:22:45-07:00'
+            }
+        ];
+        
+        var dateTimeFormat = function(dateString) {
+            var dateTimeObject = new Date(dateString);
+            // mm/dd/yyyy
+            var formattedDate = (dateTimeObject.getMonth() + 1) + '/' +
+                                dateTimeObject.getDate() + '/' +
+                                dateTimeObject.getFullYear();
+            return formattedDate;
+        };
+        
+        var loginTbody = document.getElementById('login-table'),
+            tbodyContent = '';
+        for (var i = 0; i < serverData.length; i++) {
+            var employee = serverData[i];
+            tbodyContent += "<tr><td>" + employee.name +
+                            "</td><td>" + employee.email +
+                            "</td><td>" + dateTimeFormat(employee.last_login) +
+                            "</td></tr>";
+        }
+        loginTbody.innerHTML = tbodyContent;
+    </script>
+    
+</body>
