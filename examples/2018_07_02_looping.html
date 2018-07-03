@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Output Examples</title>
+</head>
+<body>
+    <div id="fibonacci-container">
+        <h1>
+            0
+        </h1>
+        <h1>
+            1
+        </h1>
+    </div>
+
+    <script type="text/javascript">
+        var fiboContainer = document.getElementById('fibonacci-container'),
+            fn1 = 1,
+            fn2 = 0;
+        for (var counter = 2; counter < 12; counter++) {
+            console.log(counter);
+            var fiboTag = document.createElement('h1'),
+                fiboNumber = fn1 + fn2;
+            fiboTag.innerHTML = fiboNumber;
+            fiboContainer.appendChild(fiboTag);
+            fn2 = fn1;
+            fn1 = fiboNumber;
+        }
+    </script>
+    
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Output Examples</title>
+</head>
+<body>
+    <h1>
+        Enter in the following information:
+    </h1>
+    <form method="get" action="#">
+        <p>
+            <label for="your-height">
+                Your height in inches:
+            </label>
+            <input type="number" id="your-height" value="0">
+        </p>
+        
+        <p>
+            <button id="find-bmi" type="button">
+                Click to enter weight in lbs and find BMI.
+            </button>
+        </p>
+    
+    </form>
+    
+    <script type="text/javascript">
+        var heightInput = document.getElementById('your-height'),
+            bmiButton = document.getElementById('find-bmi');
+        
+        bmiButton.addEventListener('click', function(event) {
+            var height = heightInput.value,
+                weight = prompt("Enter your weight now (make sure no one is looking)", "100");
+            // BMI = kg/m2
+            height = height * 0.0254; // m/in conversion factor
+            weight = weight * 0.453592; // kg/lb conversion factor
+            var bmi = weight / (height * height),
+                userResponse = confirm('Your BMI is: ' + bmi + '. Is this okay?');
+            
+            // Handle user response
+            var headerTags = document.getElementsByTagName('h1'),
+                firstHeaderTag = headerTags[0];
+            if (userResponse) {
+                firstHeaderTag.innerHTML = 'You are happy with your BMI. That is great.';
+            } else {
+                firstHeaderTag.innerHTML = 'You are not happy. Here is a snickers to console you.';
+            }
+        }, false);
+    
+    </script>
+    
+</body>
+
+</html>
