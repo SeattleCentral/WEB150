@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Output Examples</title>
+</head>
+<body>
+    <h1>
+        Functions Part 2
+    </h1>
+
+    
+    <script type="text/javascript">
+        var greeterGenerator = function(greeting) {
+            var customGreeting = greeting + ', ';
+            return function(name) {
+                alert(customGreeting + name);
+            };
+        };
+        
+        var englishGreeting = greeterGenerator('Hello');
+        var hmongGreeting = greeterGenerator('Nyob zoo');
+        
+        englishGreeting('Bob');
+        hmongGreeting('Sally');
+        
+        
+        var greetApplier = function(greetFunc, name) {
+            greetFunc(name);
+        };
+        
+        greetApplier(englishGreeting, 'Suzan');
+        
+    </script>
+    
+</body>
