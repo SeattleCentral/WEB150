@@ -5,8 +5,10 @@
 
 ## Fundamentals
 
-### Sass
-> Syntactically awesome style sheets.
+Sort in place:
+for (var i = 0; i < my_array.length; i++) {
+    my_array.unshift(my_array.splice(i, 1)[0]);
+}
 
 
 ## Et Cetera
