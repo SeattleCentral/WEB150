@@ -74,17 +74,22 @@ var setupQuestion = function(question) {
     buttonSection.innerHTML = buttonSectionHTML;
 }
 
-var listenForAnswer = function(question) {
-    buttonSection.addEventListener('click', function(event) {
-        var selected_answer = event.toElement.innerHTML;
+var listenForAnswer = function(question, quiz_object) {
+    var listenForAnswerFunc = function(event) {
+        var selected_answer = event.target.innerHTML;
         var answer_list = question.answer_list;
         console.log(selected_answer);
+        console.log(event);
         if (checkAnswer(answer_list, selected_answer)) {
             alert("You are right!");
+            quiz_object.score += 1
         } else {
             alert("I am sorry. That is wrong. :(");
-        }  
-    }, false);
+        }
+        quiz_object.next_question();
+        buttonSection.removeEventListener('click', listenForAnswerFunc);
+    };
+    buttonSection.addEventListener('click', listenForAnswerFunc, false);
 }
 
 var checkAnswer = function(answer_list, selected_answer) {
@@ -96,5 +101,48 @@ var checkAnswer = function(answer_list, selected_answer) {
     }  
 }
 
-setupQuestion(question_data[0]);
-listenForAnswer(question_data[0]);
+var displayResults = function(correct, out_of) {
+    alert('You scored a ' + (correct / out_of * 100) + '%');
+};
+
+var Quiz = {
+    'question_index': null,
+    'score': 0,
+    'next_question': function() {
+        if (this.question_index == null) {
+            this.question_index = 0;
+        } else if (this.question_index >= question_data.length - 1) {
+            displayResults(this.score, question_data.length);
+            return;
+        } else {
+            this.question_index += 1;
+        }
+        setupQuestion(question_data[this.question_index]);
+        listenForAnswer(question_data[this.question_index], this);
+    }
+};
+
+Quiz.next_question();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
