@@ -56,38 +56,33 @@ var question_data = [
     }   
 ];
 
-
-var questionText = document.getElementById('question-text'),
-    buttonSection = document.getElementById('answer-section'),
+var questionText = $('#question-text'),
+    buttonSection = $('#answer-section'),
     buttonHTML = function(answer) {
         return '<button class="btn btn-primary form-control">' +
                 answer + '</button>';
     };
     
 var setupQuestion = function(question) {
-    questionText.innerHTML = question.question;
-    var buttonSectionHTML = '';
+    questionText.html(question.question);
+    buttonSection.html('');
     var answer_list = question.answer_list;
     for (var i = 0; i < answer_list.length; i++) {
-        buttonSectionHTML += buttonHTML(answer_list[i].answer_text);
+        buttonSection.append(buttonHTML(answer_list[i].answer_text));
     }
-    buttonSection.innerHTML = buttonSectionHTML;
 }
 
-var listenForAnswer = function(question, quiz_object) {
-    var listenForAnswerFunc = function(event) {
-        var selected_answer = event.target.innerHTML;
-        var answer_list = question.answer_list;
-        if (checkAnswer(answer_list, selected_answer)) {
+var listenForAnswer = function(question) {
+    buttonSection.off('click').on('click', function(event) {
+        var selected_answer = $(event.target).html();
+        if (checkAnswer(question.answer_list, selected_answer)) {
             alert("You are right!");
-            quiz_object.score += 1
+            window.Quiz.score += 1;
         } else {
             alert("I am sorry. That is wrong. :(");
         }
-        quiz_object.next_question();
-        buttonSection.removeEventListener('click', listenForAnswerFunc);
-    };
-    buttonSection.addEventListener('click', listenForAnswerFunc, false);
+        window.Quiz.next_question();
+    });
 }
 
 var checkAnswer = function(answer_list, selected_answer) {
@@ -125,24 +120,6 @@ var Quiz = {
 Quiz.next_question();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$.get('https://www.booknomads.com/api/v0/isbn/9789000035526', function(response) {
+    alert('The book you requested is title: ' + response.Title);
+});

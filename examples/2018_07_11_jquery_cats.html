@@ -14,32 +14,45 @@
         }
     </style>
 
-    <title>Hello, world!</title>
+    <title>Hello, Cats!</title>
 </head>
 <body>
     <main class="container">
-        <div class="row">
-            <div class="col-sm-8 offset-sm-2">
-                <h1 id="question-text">Loading an awesome question?</h1>
-            </div>
-        </div>
-        <br>
+        <div id="cat-container" class="row">
         
-        <div class="row">
-            <div id="answer-section" class="col-sm-8 offset-sm-2">
-                <button class="btn btn-primary form-control">Answer A</button>
-                <button class="btn btn-primary form-control">Answer B</button>
-                <button class="btn btn-primary form-control">Answer C</button>
-                <button class="btn btn-primary form-control">Answer D</button>
-            </div>
         </div>
     </main>
 
-    <!-- Optional JavaScript -->
-    <script type="text/javascript" src="./2018_07_09_flash_card_app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        var catContainer = $('#cat-container');
+        for (var i = 0; i < 9; i++) {
+            $.get('https://aws.random.cat/meow', function(response) {
+                var file = response.file;
+                var html = '<div class="col-sm-4"><img src="' + file + '" class="img-fluid"></div>';
+                catContainer.append(html);
+            });
+        }
+        
+        catContainer.on('click', function(event) {
+            var image = $(event.target);
+            $.get('https://aws.random.cat/meow', function(response) {
+                var file = response.file;
+                image.attr('src', file);
+            }); 
+        });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+

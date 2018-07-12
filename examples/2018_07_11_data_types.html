@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    
+    
+    <script type="text/javascript">
+        var myNumber = 3.14159265;
+//        console.log(myNumber);
+//        console.log(myNumber.toFixed(2));
+        
+        var myString = "Howdy, World!";
+//        console.log(myString);
+//        console.log(myString.length);
+//        console.log(myString.slice(7, 12));
+        
+        myString.newProperty = "Wazzup?";
+//        console.log(myString.newProperty);
+        
+        var NewString = {
+            value: "",
+            length: null,
+            slice: (string, a, b) => {
+                return string.slice(a, b);
+            }
+        };
+        
+        var myNewString = NewString;
+        myNewString.value = "Howdy, World!";
+        myNewString.length = 13;
+        myNewString.newProperty = "Whazzup?";
+//        
+//        console.log(myNewString.value);
+//        console.log(myNewString.length);
+//        console.log(myNewString.slice(myNewString.value, 7, 12));
+//        console.log(myNewString.newProperty);
+        
+        
+        // Array
+        var myArray = [];
+        myArray.push('o');
+        myArray.push('w');
+        myArray.unshift('H');
+        myArray.pop();
+        myArray.push('w');
+        myArray.push('dy!')
+        
+//        console.log(myArray)
+//        console.log(myArray.join(''));
+        
+        // My New Data Type
+        
+        var Rabbit = function(type) {
+            this.type = type;
+        }
+        
+        Rabbit.prototype.speak = function(words) {
+            console.log("The " + this.type +
+                        " rabbit says " + words);
+        };
+        
+        var fluffyRabbit = new Rabbit("fluffy");
+        fluffyRabbit.speak("I'm so fluffy!");
+        
+        var coarseRabbit = new Rabbit("coarse");
+        coarseRabbit.speak("I'm having a bad hair day. Get it?");
+        fluffyRabbit.speak("I'm still fluffy!");
+        
+        
+    </script>
+</body>    
+</html>
