@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Output Examples</title>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+
+    <script type="text/javascript">
+        var outputDiv = document.getElementById('output');
+        var handleServerResponse = function(status) {
+//            if (status == "200") {
+//                outputDiv.innerHTML = 'We got it!';
+//            } else if (status == "403") {
+//                outputDiv.innerHTML = 'Uh oh, our hand got caught in the cookie jar.';
+//            } else if (status == "404") {
+//                outputDiv.innerHTML = 'That does not seem to exist...';
+//            } else if (status == "500") {
+//                outputDiv.innerHTML = 'We broke the server, Jimmy.';
+//            } else {
+//                outputDiv.innerHTML = 'I am not sure what happened.';
+//            }
+            switch (status) {
+                case "200":
+                    outputDiv.innerHTML = 'We got it!';
+                    break;
+                case "403":
+                    outputDiv.innerHTML = 'Uh oh, our hand got caught in the cookie jar.';
+                    break;
+                case "404":
+                    outputDiv.innerHTML = 'That does not seem to exist...';
+                    break;
+                case "500":
+                    outputDiv.innerHTML = 'We broke the server, Jimmy.';
+                    break;
+                default:
+                    outputDiv.innerHTML = 'I am not sure what happened.';
+                    break;
+            }
+        };
+        
+        handleServerResponse("500");
+
+    </script>
+    
+</body>
