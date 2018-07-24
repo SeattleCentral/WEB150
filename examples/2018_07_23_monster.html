@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Output Examples</title>
+    
+    <style type="text/css">
+        #errorMessage {
+            color: red;
+        }
+    </style>
+    <script type="text/javascript" src="./2018_07_23_monster.js"></script>
+    
+</head>
+<body>
+    <h2>
+        Monster Generator
+    </h2>
+    
+    <div id="errorMessage"></div>
+    
+    <form method="post" action="#">
+        <p>
+            <label for="eyes">Number of Eyes: </label>
+            <input type="text" name="eyes" id="eyes">
+        </p>
+        
+        <p>
+            <label for="legs">Number of Legs: </label>
+            <input type="text" name="legs" id="legs">
+        </p>
+        
+        <p>
+            <label for="arms">Number of Arms: </label>
+            <input type="text" name="arms" id="arms">
+        </p>
+        
+        <p>
+            <label for="color">Color (in hex):</label>
+            <input type="text" name="color" id="color">
+        </p>
+        
+        <p>
+            <button type="button" id="submit">
+                Create Monster
+            </button>
+        </p>
+    
+    </form>
+    
+    
+    <div id="output"></div>
+
+    
+    
+</body>
