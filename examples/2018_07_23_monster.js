@@ -68,6 +68,29 @@ Monster.prototype.setColor = function(color) {
     }
 };
 
+Monster.prototype.description = function() {
+    var description = `
+        <p>
+            A ${this.eyes}-eyed,
+            <span class="colorBlock" style="background-color: ${this.color}">
+                &nbsp;    
+            </span>
+            haired monster that ${this.getMovementText()}
+            and attacks with ${this.arms} arms.
+        </p>`;
+    return description;
+};
+
+Monster.prototype.getMovementText = function() {
+    if (this.legs > 1) {
+        return `walks on ${this.legs} legs`;
+    } else if (this.legs === 1) {
+        return 'hops on one leg';
+    } else {
+        return 'slithers';
+    }
+};
+
 
 window.onload = function() {
     var errorMessage = document.getElementById('errorMessage'),
@@ -88,7 +111,7 @@ window.onload = function() {
         
         try {
             var monster = new Monster(eyes, legs, arms, color);
-            console.log(monster);
+            output.innerHTML = monster.description();
         } catch (e) {
             errorMessage.innerHTML = e.message;
         }
