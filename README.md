@@ -3,27 +3,27 @@
 
 #### WEB 150: INTRO TO JAVASCRIPT
 #### Item No: 3236
-#### Section: 01
+#### Section: HY
 #### Seattle Central College
 
 ## Course Information
 
 * Credits: 5.0 
-* Quarter: Summer 2018
+* Quarter: Summer 2019
 * Location: BE 3173
 * Days: MW
-* Time: 4:00pm - 6:50pm
-* Dates: 06/25/2018 - 08/17/2018
+* Time: 4:00pm - 6:30pm
+* Dates: 06/24/2019 - 08/16/2019
 * Instructor: Joshua Wedekind
 * Office: BE 3175 C. Call/text to verify my current location. [(206) 930-2645](tel:+12069302645)
-* Office Hours:  MW 7:00pm - 8:00pm
+* Office Hours:  MW 6:45pm - 7:30pm
 * E-Mail: [joshua.wedekind@seattlecolleges.edu](mailto:joshua.wedekind@seattlecolleges.edu)
 * Website: [https://github.com/SeattleCentral/WEB150](https://github.com/SeattleCentral/WEB150)
 * Github: [halfnibble](https://github.com/halfnibble)
 
 ## Course Description
 
-Examines computer programming theory and basics with the use of the JavaScript programming language. Uses a hands-on approach to building interactive websites with JavaScript and demonstrates how to simplify the web development process with the use of jQuery. Studies several popular web techniques. Prereq: WEB 110 with a grade of 2.0 or higher or permission.
+Examines computer programming theory and basics with the use of the JavaScript programming language. Uses a hands-on approach to building interactive websites with JavaScript and demonstrates how to simplify the web development process with the use of jQuery and other JavaScript libraries. Studies several popular web techniques. Prereq: WEB 110 with a grade of 2.0 or higher or permission.
 
 **Prerequisites:** WEB 110 with a grade of 2.0 or higher or permission.
  
@@ -34,20 +34,20 @@ Upon Completion of this course, students will be able to:
 1. Understand the basics of programming with JavaScript.
 2. Learn how to utilize JavaScript libraries, such as jQuery, to simplify the development process.
 3. Be comfortable manipulating the DOM with JavaScript and jQuery.
-4. Write maintainable, modular code in ES6 syntax.
+4. Write maintainable, modular code in ES6/ES7 syntax.
 5. Use the Node.js runtime to develop and deploy JavaScript solutions.
 
 
 ## Textbook (required):
 
-Eloquent JavaScript, 2nd Ed.: A Modern Introduction to Programming
+Eloquent JavaScript, 3rd Ed.: A Modern Introduction to Programming
 
 <cite>by Marijn Haverbeke</cite>
 
-Available at the College Bookstore.<br>
-**ISBN-10:** 1593275846<br>
-**ISBN-13:** 978-1593275846<br>
-And also on [amazon.com](https://www.amazon.com/Eloquent-JavaScript-2nd-Ed-Introduction/dp/1593275846/ref=sr_1_1?ie=UTF8&qid=1529953016&sr=8-1&keywords=eloquent+javascript)
+Free [online version](https://eloquentjavascript.net/)<br>
+**ISBN-10:** 1593279507<br>
+**ISBN-13:** 978-1593279509<br>
+And also on [amazon.com](https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507)
 
 ## Assignments/Projects
 
@@ -133,7 +133,7 @@ Students with documented disabilities requesting class accommodations, requiring
 
 
 **\*No class on**<br>
-July 4th, 2018 - Independence Day<br>
+A recorded lecture will be uploaded for the regularly scheduled class on July 3rd, 2019. There will be no onsite lecture and BE 3173 will be closed.<br>
 
 See College Holidays
 
