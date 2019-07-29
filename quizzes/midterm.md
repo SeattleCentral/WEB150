@@ -1,11 +1,11 @@
-# Quiz 01
-> Due: 07/17/2019 at 11:59 PM
+# Midterm Study Guide
+> Due: 07/31/2019 at 11:59 PM
 
 
 ## Information
 
-Quiz 01 contains both a Repl.it portion worth 10 pts. that is open notes and a 
-Canvas, multiple choice portion worth 10 pts. The Canvas portion is closed book.
+The Midterm contains both a Repl.it portion worth 20 pts. that is open notes and a 
+Canvas, multiple choice portion worth 30 pts. The Canvas portion is closed book.
 
 ## Preparation Notes
 
@@ -45,7 +45,7 @@ Since the first operation supports the "+" operator, in this case a concatenatio
 </dl>
 
 
-# Arrays
+## Arrays
 
 Arrays are a type of object specialized for storing an ordered sequence of values.
 
@@ -60,7 +60,7 @@ Arrays have special helper methods to help manage the data. Arrays also have a .
 <dl>
     <dt>.push()</dt>
     <dd>Adds an item to the end of an array</dd>
-    <dt>.push()</dt>
+    <dt>.pop()</dt>
     <dd>Removes an item from the end of the array and returns it.</dd>
     <dt>.unshift()</dt>
     <dd>Adds an item to the beginning of an array</dd>
